@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "remotion studio src/index.ts",
+    "start": "node api.js && remotion studio src/index.ts",
     "render": "remotion render src/index.ts BubbleSort out/bubble-sort.mp4",
     "script": "ts-node src/generateScript.ts"
   },
