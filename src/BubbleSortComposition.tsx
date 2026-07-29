@@ -1,9 +1,10 @@
 import React from "react";
-import { CalculateMetadataFunction, Sequence, AbsoluteFill } from "remotion";
+import { CalculateMetadataFunction, Sequence, AbsoluteFill, staticFile } from "remotion";
 import { AlgorithmViz, REVEAL_FRAMES } from "./AlgorithmViz";
 import { TitleCard } from "./TitleCard";
 import { IntroLogo } from "./IntroLogo";
 import { bubbleSortTracer } from "./tracers/bubbleSort";
+import { Video } from "@remotion/media";
 
 export type BubbleSortProps = {
   data: number[];
@@ -55,8 +56,8 @@ export const BubbleSortComposition: React.FC<BubbleSortProps> = ({
   return (
     <AbsoluteFill style={{ backgroundColor: "#ffffff" }}>
       <Sequence durationInFrames={INTRO_FRAMES}>
-        <IntroLogo durationInFrames={INTRO_FRAMES} />
-      </Sequence>
+            <IntroLogo durationInFrames={INTRO_FRAMES} />
+          </Sequence>
       <Sequence from={INTRO_FRAMES} durationInFrames={TOPIC_FRAMES}>
         <TitleCard
           title="How Bubble Sort Works"
@@ -75,7 +76,16 @@ export const BubbleSortComposition: React.FC<BubbleSortProps> = ({
           subtitle=""
         // subtitle={`${data.length} elements · ${steps.length} steps`}
         />
-      </Sequence>
+      </Sequence><Video
+        src={staticFile("Beach House - Space Song (Official Instrumental).m4a")}
+        durationInFrames={9640.23}
+        style={{
+          position: "absolute",
+          translate: "1025px 0.9px",
+          rotate: "0.2deg"
+        }}
+        volume={0.05}
+        loop />
     </AbsoluteFill>
   );
 };

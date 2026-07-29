@@ -11,6 +11,9 @@ importers:
       '@remotion/cli':
         specifier: ^4.0.190
         version: 4.0.500(postcss@8.5.24)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
+      '@remotion/media':
+        specifier: 4.0.500
+        version: 4.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -405,6 +408,12 @@ packages:
 
   '@remotion/media-utils@4.0.500':
     resolution: {integrity: sha512-07Ht4xw6Ycsqk8AJeDoHqM4xHSI/T4BJyqixEDK8Yj8JKZewt6SIH5iPJjw6zPfw8u0+mvl9U1UV5HH+L6yOqg==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  '@remotion/media@4.0.500':
+    resolution: {integrity: sha512-7Zj4tXHxklxzOazJ33AJMVqe9wD9VuBhUpaZ9IGmgLvs4QdYN8tzKd+XTKLdh4xDAors0XDOjL4jbxN9Olpvhw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -1776,6 +1785,14 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       remotion: 4.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  '@remotion/media@4.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      mediabunny: 1.50.8
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      remotion: 4.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      zod: 4.4.3
 
   '@remotion/player@4.0.500(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:

@@ -8,14 +8,15 @@
     "script": "ts-node src/generateScript.ts"
   },
   "dependencies": {
+    "@remotion/cli": "^4.0.190",
+    "@remotion/media": "4.0.500",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remotion": "^4.0.190",
-    "@remotion/cli": "^4.0.190"
+    "remotion": "^4.0.190"
   },
   "devDependencies": {
-    "typescript": "^5.5.4",
     "@types/react": "^18.3.3",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }
