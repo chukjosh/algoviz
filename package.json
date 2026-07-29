@@ -1,0 +1,21 @@
+{
+  "name": "algoviz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts BubbleSort out/bubble-sort.mp4",
+    "script": "ts-node src/generateScript.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.190",
+    "@remotion/cli": "^4.0.190"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/react": "^18.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
